@@ -1,6 +1,6 @@
 # KhanHackCracked.
 
-this was based on the extension \ 
+this was based on the extension 
 <https://chromewebstore.google.com/detail/KhanHack/daodbmeffhdfmdchlkenoompiebllpma>
 
 but i cracked it.
