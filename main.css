@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 400px;
+    height: 400px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 500px;
+    backdrop-filter: blur(10px) brightness(.6);
+    z-index: 99999;
+    border-bottom: 2px solid #1f1f1f;
+}
+
+.top img {
+    height: 45px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.buttony {
+    width: 220px;
+    height: 45px;
+    background-color: #27aa8c;
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: 3px solid #1e866e;
+    outline-offset: 4px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    user-select: none;
+    z-index: 1;
+}
+
+.buttony:first-of-type {
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    z-index: 9999;
+}
+
+h1 span {
+    color: #35c4a2;
+}
+
+.buttony:hover {
+    outline: 3px solid #18745e;
+    background-color: #18745e;
+    transition: all 0.3s ease;
+    transform: scale(1.03);
+}
+
+#display {
+    background-color: #202020;
+    z-index: 999999;
+    padding: 4px;
+    font-size: 13px;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    text-align: center;
+    width: 320px;
+    line-height: 18px;
+    margin-top: 5vw;
+}
+
+p.status {
+    z-index: 999999;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    height: 25px;
+    margin-top: 4px;
+}
+
+p.status span {
+    margin-left: 5px;
+    font-weight: 600;
+    color: #0dc007;
+}
+
+.statusy {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5vw;
+    margin-top: 2.5vw;
+}
+
+.buttons {
+    display: flex;
+    gap: 3vw;
+    margin-top: 1.5vw;
+}
+
+#paidStatus {
+    color: #e80031;
+}
+
+.buttons button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #52d11c;
+    outline: .7vw solid #52d11cbd;
+    border: none;
+    flex: 1; 
+    border-radius: 1vw;
+    padding: .5vw 3vw;
+    color: #1d1d1d;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.buttons button:hover {
+    outline: .7vw solid #43af14bd;
+    background-color: #49be17;
+    transition: .3s ease;
+}
+
+.buttons button.login {
+    background-color: transparent;
+    outline: .7vw solid #fff;
+    transition: all .3s ease;
+    color: #fff;
+}
+
+.buttons button.login:hover {
+    outline: .7vw solid #d6d6d6;
+    transition: all .3s ease;
+}
+#questionDataContainer {
+    display: none;
+    opacity: 0;
+}

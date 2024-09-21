@@ -1,0 +1,46 @@
+{
+"update_url": "http://0.0.0.0",
+
+  "manifest_version": 3,
+  "name": "KhanHack",
+  "description": "The KhanHack Extension Used To View All Answers Easily!",
+  "version": "1.8.3",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["*://*.khanacademy.org/*"],
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "icons/icon128.png",
+          "48": "icons/icon128.png",
+          "128": "icons/icon128.png"
+      }
+  },
+  "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+  },
+  "background": {
+      "service_worker": "background.js"
+  },
+  "content_scripts": [
+      {
+          "matches": ["*://*.khanacademy.org/*"],
+          "js": ["ExtPay.js", "content.js"],
+          "run_at": "document_start",
+          "all_frames": true
+      },
+      {
+        "matches": ["https://extensionpay.com/*"],
+        "js": ["ExtPay.js"],
+        "run_at": "document_start"
+      }
+  ],
+  "web_accessible_resources": [
+      {
+          "resources": ["inject.js", "background.js", "content.js", "extension.css"],
+          "matches": ["*://*.khanacademy.org/*"],
+          "use_dynamic_url": true
+      }
+  ]
+}
